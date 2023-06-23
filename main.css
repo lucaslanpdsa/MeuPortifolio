@@ -1,0 +1,48 @@
+* {
+  color: #100e0e;
+}
+
+header {
+  padding-top: 1em;
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+main {
+  height: calc(100vh - 88px);
+}
+main .container {
+  align-items: center;
+  width: 65%;
+  display: flex;
+  justify-content: space-between;
+}
+main .container div span {
+  color: rgb(153, 127, 255);
+}
+main .container h3,
+main .container h2 {
+  font-size: 35px;
+}
+main .container div {
+  text-align: center;
+}
+main .container div .botoes {
+  margin-top: 1em;
+  display: flex;
+  gap: 8px;
+}
+main .container div .btn {
+  color: #FFF;
+  font-weight: bold;
+  width: 100%;
+  background-color: rgb(119, 119, 201);
+}
+main .container div img {
+  height: 80%;
+  border-radius: 50%;
+}
+
+/*# sourceMappingURL=main.css.map */

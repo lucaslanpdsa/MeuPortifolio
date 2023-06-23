@@ -1,0 +1,56 @@
+@use "variaveis";
+
+* {
+  color: variaveis.$corTextoPadrao;
+}
+
+header {
+  padding-top: 1em;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+main {
+  height: calc(100vh - 88px);
+
+  .container {
+    align-items: center;
+    width: 65%;
+    display: flex;
+    justify-content: space-between;
+
+    div span {
+      color: rgb(153, 127, 255);
+    }
+
+    h3,
+    h2 {
+      font-size: 35px;
+    }
+
+    div {
+      text-align: center;
+    }
+
+    div .botoes {
+      margin-top: 1em;
+      display: flex;
+      gap: 8px;
+    }
+
+    div .btn {
+      color: #FFF;
+      font-weight: bold;
+      width: 100%;
+      background-color: rgb(119, 119, 201);
+    }
+
+    div img {
+      height: 80%;
+      border-radius: 50%;
+    }
+  }
+}
