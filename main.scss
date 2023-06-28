@@ -1,56 +1,117 @@
 @use "variaveis";
+@use "reset";
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
 
-* {
-  color: variaveis.$corTextoPadrao;
+body {
+  background-color: variaveis.$color-bg-darkhome !important;
+  color: variaveis.$color-title;
 }
 
-header {
-  padding-top: 1em;
+.btn {
+  background-color: variaveis.$btn-color-bg;
+  color: variaveis.$btn-color-text;
+}
 
-  .container {
+.header {
+  border-bottom: 1px solid variaveis.$color-primary;
+}
+
+.header__container {
+  padding: .7em 0;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+
+  .logo {
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    gap: 12px;
+
+    .container__img img {
+      width: 2em;
+      max-height: 100%;
+    }
+
+    .nome {
+      font-size: 16px;
+      margin: 0;
+    }
+  }
+
+  .navbar-nav .nav-item a {
+    color: variaveis.$color-title;
+  }
+
+  .navbar-nav .nav-item .active {
+    color: variaveis.$color-title;
+    opacity: 85%;
   }
 }
 
-main {
+.inicio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   height: calc(100vh - 88px);
+  align-items: center;
+  display: flex;
+  padding-bottom: 77px;
 
-  .container {
-    align-items: center;
-    width: 65%;
-    display: flex;
-    justify-content: space-between;
+  .barra-lateral {
+    position: absolute;
+    left: 0;
 
-    div span {
-      color: rgb(153, 127, 255);
+    .lista-lateral {
+      padding: 10px;
+      background-color: #020c15;
     }
 
-    h3,
-    h2 {
+    .barra-lateral__icon {
       font-size: 35px;
+      color: variaveis.$color-title;
     }
 
-    div {
-      text-align: center;
+    ul li {
+      list-style: none;
     }
 
-    div .botoes {
-      margin-top: 1em;
-      display: flex;
-      gap: 8px;
+    i {
+      width: 100px;
     }
 
-    div .btn {
-      color: #FFF;
+  }
+
+
+  .inicio__container-texto .ola {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 3.5em;
+    color: variaveis.$color-title;
+  }
+
+  .inicio__container-texto span {
+    color: variaveis.$color-primary;
+  }
+
+  .inicio__container-btn {
+    display: flex;
+    gap: 6px;
+    margin-top: 25px;
+    width: 85%;
+    margin: 0 auto;
+
+    .btn {
       font-weight: bold;
-      width: 100%;
-      background-color: rgb(119, 119, 201);
+      font-size: 20px;
+      flex-grow: 1;
     }
 
-    div img {
-      height: 80%;
-      border-radius: 50%;
+    .btn:hover {
+      background-color: #E81B5C;
     }
+  }
+
+  .inicio__container span {
+    color: variaveis.$color-primary;
   }
 }

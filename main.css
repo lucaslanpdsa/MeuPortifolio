@@ -1,48 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap");
 * {
-  color: #100e0e;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-header {
-  padding-top: 1em;
-}
-header .container {
-  display: flex;
-  justify-content: space-between;
+body {
+  background-color: #01080E !important;
+  color: #D7F9FF;
 }
 
-main {
-  height: calc(100vh - 88px);
+.btn {
+  background-color: #2BFDBE;
+  color: #01080E;
 }
-main .container {
-  align-items: center;
-  width: 65%;
-  display: flex;
-  justify-content: space-between;
+
+.header {
+  border-bottom: 1px solid #2BDEFD;
 }
-main .container div span {
-  color: rgb(153, 127, 255);
-}
-main .container h3,
-main .container h2 {
-  font-size: 35px;
-}
-main .container div {
+
+.header__container {
+  padding: 0.7em 0;
   text-align: center;
-}
-main .container div .botoes {
-  margin-top: 1em;
   display: flex;
-  gap: 8px;
+  justify-content: space-between;
 }
-main .container div .btn {
-  color: #FFF;
+.header__container .logo {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  gap: 12px;
+}
+.header__container .logo .container__img img {
+  width: 2em;
+  max-height: 100%;
+}
+.header__container .logo .nome {
+  font-size: 16px;
+  margin: 0;
+}
+.header__container .navbar-nav .nav-item a {
+  color: #D7F9FF;
+}
+.header__container .navbar-nav .nav-item .active {
+  color: #D7F9FF;
+  opacity: 85%;
+}
+
+.inicio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: calc(100vh - 88px);
+  align-items: center;
+  display: flex;
+  padding-bottom: 77px;
+}
+.inicio .barra-lateral {
+  position: absolute;
+  left: 0;
+}
+.inicio .barra-lateral .lista-lateral {
+  padding: 10px;
+  background-color: #020c15;
+}
+.inicio .barra-lateral .barra-lateral__icon {
+  font-size: 35px;
+  color: #D7F9FF;
+}
+.inicio .barra-lateral ul li {
+  list-style: none;
+}
+.inicio .barra-lateral i {
+  width: 100px;
+}
+.inicio .inicio__container-texto .ola {
+  font-family: "Share Tech Mono", monospace;
+  font-size: 3.5em;
+  color: #D7F9FF;
+}
+.inicio .inicio__container-texto span {
+  color: #2BDEFD;
+}
+.inicio .inicio__container-btn {
+  display: flex;
+  gap: 6px;
+  margin-top: 25px;
+  width: 85%;
+  margin: 0 auto;
+}
+.inicio .inicio__container-btn .btn {
   font-weight: bold;
-  width: 100%;
-  background-color: rgb(119, 119, 201);
+  font-size: 20px;
+  flex-grow: 1;
 }
-main .container div img {
-  height: 80%;
-  border-radius: 50%;
+.inicio .inicio__container-btn .btn:hover {
+  background-color: #E81B5C;
+}
+.inicio .inicio__container span {
+  color: #2BDEFD;
 }
 
 /*# sourceMappingURL=main.css.map */
