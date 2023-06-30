@@ -3,7 +3,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
 
 body {
-  background-color: variaveis.$color-bg-darkhome !important;
+  background-color: variaveis.$color-bg-darkhome;
+  color: variaveis.$color-text;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
   color: variaveis.$color-title;
 }
 

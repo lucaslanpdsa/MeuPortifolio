@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #01080E;
+  color: #98D4DE;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: #D7F9FF;
+}
+
+.btn {
+  background-color: #2BFDBE;
+  color: #01080E;
+}
+
+.header {
+  border-bottom: 1px solid #2BDEFD;
+}
+
+.header__container {
+  padding: 0.7em 0;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+}
+.header__container .logo {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  gap: 12px;
+}
+.header__container .logo .container__img img {
+  width: 2em;
+  max-height: 100%;
+}
+.header__container .logo .nome {
+  font-size: 16px;
+  margin: 0;
+}
+.header__container .navbar-nav .nav-item a {
+  color: #D7F9FF;
+}
+.header__container .navbar-nav .nav-item .active {
+  color: #D7F9FF;
+  opacity: 85%;
+}
+
+.sobre {
+  display: flex;
+  flex-wrap: wrap;
+  color: #98D4DE;
+}
+.sobre .title {
+  margin: 1em 0;
+  text-align: center;
+  width: 100%;
+}
+.sobre .esquerda {
+  width: 50%;
+}
+.sobre .texto {
+  margin-bottom: 3em;
+}
+.sobre .habilidades__lista {
+  padding-top: 2em;
+}
+.sobre .habilidades__lista ul {
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+.sobre .habilidades__lista li {
+  border: 1px solid #2A7AE4;
+  padding: 0.5rem 1.25rem;
+  color: #2BDEFD;
+  list-style: none;
+  border-radius: 13px;
+}
+.sobre .direita {
+  width: 50%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.sobre .direita img {
+  border-radius: 13px;
+}
+
+/*# sourceMappingURL=sobre.css.map */
