@@ -57,55 +57,32 @@ h5 {
   }
 }
 
-.sobre {
-  display: flex;
-  flex-wrap: wrap;
-  color: variaveis.$color-text;
+.contato {
+  padding-top: 2em;
+  text-align: center;
+  color: #Fff;
+}
 
+h1 {
+  font-weight: bold;
+}
 
-  .title {
+form {
+  text-align: start;
+  margin: 2.5em auto 0;
+  width: 40%;
+
+  .form-text {
+    color: #Fff;
     margin: 1em 0;
-    text-align: center;
-    width: 100%;
   }
 
-  .esquerda {
-    width: 50%;
+  .form-control {
+    background-color: #Fff;
   }
 
-  .texto {
-    margin-bottom: 3em;
-  }
-
-  .habilidades__lista {
-
-    padding-top: 2em;
-
-    ul {
-      padding: 0;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1em;
-    }
-
-
-    li {
-      border: 1px solid variaveis.$border-card;
-      padding: 0.5rem 1.25rem;
-      color: variaveis.$color-primary;
-      list-style: none;
-      border-radius: 13px;
-    }
-  }
-
-  .direita {
-    width: 50%;
-    display: flex;
-    justify-content: end;
-    align-items: center;
-
-    img {
-      border-radius: 13px;
-    }
+  .btn {
+    font-weight: bold;
+    background-color: variaveis.$btn-color-bg;
   }
 }

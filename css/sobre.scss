@@ -1,0 +1,111 @@
+@use "variaveis";
+@use "reset";
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+body {
+  background-color: red;
+  color: variaveis.$color-text;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: variaveis.$color-title;
+}
+
+.btn {
+  background-color: variaveis.$btn-color-bg;
+  color: variaveis.$btn-color-text;
+}
+
+.header {
+  border-bottom: 1px solid variaveis.$color-primary;
+}
+
+.header__container {
+  padding: .7em 0;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+
+  .logo {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    gap: 12px;
+
+    .container__img img {
+      width: 2em;
+      max-height: 100%;
+    }
+
+    .nome {
+      font-size: 16px;
+      margin: 0;
+    }
+  }
+
+  .navbar-nav .nav-item a {
+    color: variaveis.$color-title;
+  }
+
+  .navbar-nav .nav-item .active {
+    color: variaveis.$color-title;
+    opacity: 85%;
+  }
+}
+
+.sobre {
+  display: flex;
+  flex-wrap: wrap;
+  color: variaveis.$color-text;
+
+
+  .title {
+    margin: 1em 0;
+    text-align: center;
+    width: 100%;
+  }
+
+  .esquerda {
+    width: 50%;
+  }
+
+  .texto {
+    margin-bottom: 3em;
+  }
+
+  .habilidades__lista {
+
+    padding-top: 2em;
+
+    ul {
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1em;
+    }
+
+
+    li {
+      border: 1px solid variaveis.$border-card;
+      padding: 0.5rem 1.25rem;
+      color: variaveis.$color-primary;
+      list-style: none;
+      border-radius: 13px;
+    }
+  }
+
+  .direita {
+    width: 50%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+    img {
+      border-radius: 13px;
+    }
+  }
+}

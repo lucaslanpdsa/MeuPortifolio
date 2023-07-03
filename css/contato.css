@@ -55,46 +55,31 @@ h5 {
   opacity: 85%;
 }
 
-.sobre {
-  display: flex;
-  flex-wrap: wrap;
-  color: #98D4DE;
-}
-.sobre .title {
-  margin: 1em 0;
-  text-align: center;
-  width: 100%;
-}
-.sobre .esquerda {
-  width: 50%;
-}
-.sobre .texto {
-  margin-bottom: 3em;
-}
-.sobre .habilidades__lista {
+.contato {
   padding-top: 2em;
-}
-.sobre .habilidades__lista ul {
-  padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1em;
-}
-.sobre .habilidades__lista li {
-  border: 1px solid #2A7AE4;
-  padding: 0.5rem 1.25rem;
-  color: #2BDEFD;
-  list-style: none;
-  border-radius: 13px;
-}
-.sobre .direita {
-  width: 50%;
-  display: flex;
-  justify-content: end;
-  align-items: center;
-}
-.sobre .direita img {
-  border-radius: 13px;
+  text-align: center;
+  color: #Fff;
 }
 
-/*# sourceMappingURL=sobre.css.map */
+h1 {
+  font-weight: bold;
+}
+
+form {
+  text-align: start;
+  margin: 2.5em auto 0;
+  width: 40%;
+}
+form .form-text {
+  color: #Fff;
+  margin: 1em 0;
+}
+form .form-control {
+  background-color: #Fff;
+}
+form .btn {
+  font-weight: bold;
+  background-color: #2BFDBE;
+}
+
+/*# sourceMappingURL=contato.css.map */

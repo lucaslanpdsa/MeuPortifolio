@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass": "sass main.scss main.css  --watch",
+    "sass": "sass ./css/projetos.scss ./css/projetos.css --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
