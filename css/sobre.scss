@@ -1,9 +1,10 @@
 @use "variaveis";
 @use "reset";
+@use "header";
 @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
 
 body {
-  background-color: red;
+  background-color: variaveis.$color-bg-darkhome;
   color: variaveis.$color-text;
 }
 
@@ -18,43 +19,6 @@ h5 {
 .btn {
   background-color: variaveis.$btn-color-bg;
   color: variaveis.$btn-color-text;
-}
-
-.header {
-  border-bottom: 1px solid variaveis.$color-primary;
-}
-
-.header__container {
-  padding: .7em 0;
-  text-align: center;
-  display: flex;
-  justify-content: space-between;
-
-  .logo {
-    display: flex;
-    align-items: center;
-    overflow: hidden;
-    gap: 12px;
-
-    .container__img img {
-      width: 2em;
-      max-height: 100%;
-    }
-
-    .nome {
-      font-size: 16px;
-      margin: 0;
-    }
-  }
-
-  .navbar-nav .nav-item a {
-    color: variaveis.$color-title;
-  }
-
-  .navbar-nav .nav-item .active {
-    color: variaveis.$color-title;
-    opacity: 85%;
-  }
 }
 
 .sobre {
@@ -107,5 +71,29 @@ h5 {
     img {
       border-radius: 13px;
     }
+  }
+}
+
+@media screen and (max-width: variaveis.$celular) {
+  .sobre {
+    display: block;
+  }
+
+  .sobre .direita,
+  .sobre .esquerda {
+    width: 100%;
+  }
+
+  .sobre .direita {
+    justify-content: center;
+    margin: 3em 0;
+  }
+
+  .texto .texto__title {
+    display: none;
+  }
+
+  .habilidades__title {
+    text-align: center;
   }
 }

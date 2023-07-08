@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -50,59 +49,4 @@
   opacity: 85%;
 }
 
-body {
-  background-color: #01080E;
-  color: #98D4DE;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5 {
-  color: #D7F9FF;
-}
-
-.btn {
-  background-color: #2BFDBE;
-  color: #01080E;
-}
-
-.contato {
-  padding: 2em 0;
-  text-align: center;
-  color: #Fff;
-}
-
-h1 {
-  font-weight: bold;
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-  text-align: start;
-  margin: 2.5em auto 0;
-  width: 43%;
-}
-form .form-text {
-  color: #Fff;
-  margin-bottom: 2em;
-}
-form .form-control {
-  background-color: #Fff;
-}
-form .btn {
-  font-weight: bold;
-  background-color: #2BFDBE;
-  width: 60%;
-  margin: 0 auto;
-}
-
-@media screen and (max-width: 576px) {
-  form {
-    width: 80%;
-  }
-}
-
-/*# sourceMappingURL=contato.css.map */
+/*# sourceMappingURL=header.css.map */

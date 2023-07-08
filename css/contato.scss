@@ -1,5 +1,6 @@
 @use "variaveis";
 @use "reset";
+@use "header";
 @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
 
 body {
@@ -20,45 +21,8 @@ h5 {
   color: variaveis.$btn-color-text;
 }
 
-.header {
-  border-bottom: 1px solid variaveis.$color-primary;
-}
-
-.header__container {
-  padding: .7em 0;
-  text-align: center;
-  display: flex;
-  justify-content: space-between;
-
-  .logo {
-    display: flex;
-    align-items: center;
-    overflow: hidden;
-    gap: 12px;
-
-    .container__img img {
-      width: 2em;
-      max-height: 100%;
-    }
-
-    .nome {
-      font-size: 16px;
-      margin: 0;
-    }
-  }
-
-  .navbar-nav .nav-item a {
-    color: variaveis.$color-title;
-  }
-
-  .navbar-nav .nav-item .active {
-    color: variaveis.$color-title;
-    opacity: 85%;
-  }
-}
-
 .contato {
-  padding-top: 2em;
+  padding: 2em 0;
   text-align: center;
   color: #Fff;
 }
@@ -68,13 +32,16 @@ h1 {
 }
 
 form {
+  display: flex;
+  flex-direction: column;
   text-align: start;
   margin: 2.5em auto 0;
-  width: 40%;
+  width: 43%;
+
 
   .form-text {
     color: #Fff;
-    margin: 1em 0;
+    margin-bottom: 2em;
   }
 
   .form-control {
@@ -84,5 +51,13 @@ form {
   .btn {
     font-weight: bold;
     background-color: variaveis.$btn-color-bg;
+    width: 60%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: variaveis.$celular) {
+  form {
+    width: 80%;
   }
 }

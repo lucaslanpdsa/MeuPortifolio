@@ -1,5 +1,6 @@
 @use "variaveis";
 @use "reset";
+@use "header";
 @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
 
 body {
@@ -20,43 +21,6 @@ h5 {
   color: variaveis.$btn-color-text;
 }
 
-.header {
-  border-bottom: 1px solid variaveis.$color-primary;
-}
-
-.header__container {
-  padding: .7em 0;
-  text-align: center;
-  display: flex;
-  justify-content: space-between;
-
-  .logo {
-    display: flex;
-    align-items: center;
-    overflow: hidden;
-    gap: 12px;
-
-    .container__img img {
-      width: 2em;
-      max-height: 100%;
-    }
-
-    .nome {
-      font-size: 16px;
-      margin: 0;
-    }
-  }
-
-  .navbar-nav .nav-item a {
-    color: variaveis.$color-title;
-  }
-
-  .navbar-nav .nav-item .active {
-    color: variaveis.$color-title;
-    opacity: 85%;
-  }
-}
-
 .inicio {
   display: flex;
   flex-direction: column;
@@ -67,12 +31,26 @@ h5 {
   padding-bottom: 77px;
 
   .barra-lateral {
-    position: absolute;
+    position: fixed;
     left: 0;
+    bottom: 0;
+
+    @media screen and (max-width:variaveis.$celular) {
+      position: fixed;
+      bottom: 0;
+    }
 
     .lista-lateral {
       padding: 10px;
       background-color: #020c15;
+    }
+
+    @media screen and (max-width:variaveis.$celular) {
+      .lista-lateral {
+        display: flex;
+        gap: .5em;
+        padding: 0;
+      }
     }
 
     .barra-lateral__icon {
@@ -88,6 +66,12 @@ h5 {
       width: 100px;
     }
 
+  }
+
+  @media screen and (max-width:variaveis.$celular) {
+    .inicio__container-texto {
+      font-size: .3em;
+    }
   }
 
 
@@ -116,6 +100,18 @@ h5 {
 
     .btn:hover {
       background-color: #E81B5C;
+    }
+  }
+
+  @media screen and (max-width:variaveis.$tablet) {
+    .inicio__container-texto {
+      font-size: .55em;
+    }
+
+    .inicio__container-btn {
+      .btn {
+        font-size: .8em;
+      }
     }
   }
 
