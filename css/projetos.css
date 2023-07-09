@@ -68,9 +68,6 @@ h5 {
   color: #01080E;
 }
 
-.projetos {
-  text-align: center;
-}
 .projetos h1 {
   width: 100%;
   margin-bottom: 0.1;
@@ -108,6 +105,9 @@ h5 {
   height: fit-content;
   border-radius: 15px;
 }
+.cardo .btn {
+  width: 40%;
+}
 .cardo img {
   width: 100%;
 }
@@ -115,8 +115,11 @@ h5 {
   font-weight: bold;
   font-size: 22px;
   width: fit-content;
-  margin: 0.5em auto;
+  margin: 0.5em 0;
   color: #D7F9FF;
+}
+.cardo .card__descricao {
+  align-self: flex-end;
 }
 
 /*# sourceMappingURL=projetos.css.map */

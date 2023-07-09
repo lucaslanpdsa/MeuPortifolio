@@ -23,8 +23,6 @@ h5 {
 
 .projetos {
 
-  text-align: center;
-
   h1 {
     width: 100%;
     margin-bottom: .1;
@@ -67,6 +65,10 @@ h5 {
   height: fit-content;
   border-radius: 15px;
 
+  .btn {
+    width: 40%;
+  }
+
   img {
     width: 100%;
   }
@@ -75,7 +77,11 @@ h5 {
     font-weight: bold;
     font-size: 22px;
     width: fit-content;
-    margin: .5em auto;
+    margin: .5em 0;
     color: variaveis.$color-title;
+  }
+
+  .card__descricao {
+    align-self: flex-end;
   }
 }
